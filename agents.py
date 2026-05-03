@@ -1,11 +1,14 @@
 import os
+import streamlit as st
 from dotenv import load_dotenv
+
 load_dotenv()
 
-if os.environ.get("GEMINI_API_KEY") is not None:
-    print("GEMINI_API_KEY is set")
-if os.environ.get('TAVILY_API_KEY') is not None:
-    print("TAVILY_API_KEY is set")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") or st.secrets.get("GEMINI_API_KEY")
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY") or st.secrets.get("TAVILY_API_KEY")
+
+os.environ["GEMINI_API_KEY"] = GEMINI_API_KEY
+os.environ["TAVILY_API_KEY"] = TAVILY_API_KEY
 
 from langchain_google_genai.chat_models import ChatGoogleGenerativeAI
 
