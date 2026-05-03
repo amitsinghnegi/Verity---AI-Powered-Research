@@ -1,5 +1,11 @@
 # ✦ Verity — AI-Powered Research Assistant
 
+<p align="center">
+  <a href="https://verity-ai-powered-research.streamlit.app/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Launch-App-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white"/>
+  </a>
+</p>
+
 Verity is a sleek, multi-agent AI research tool built with **Streamlit**, **LangChain**, and **Google Gemini**. Give it a topic, and a team of specialized AI agents will autonomously scour the web, extract deep insights, write a structured report, and critically evaluate the final draft.
 
 ![UI Theme](https://img.shields.io/badge/UI-Dark%2FLight_Mode-success)
@@ -42,6 +48,19 @@ Verity utilizes a 4-step autonomous pipeline to generate high-quality research:
 - **Search API**: Tavily
 - **Web Scraping**: BeautifulSoup + Requests
 - **Environment**: dotenv
+
+---
+
+## 🌐 Live Demo
+
+👉 https://verity-ai-powered-research.streamlit.app/
+
+Experience the full pipeline in action:
+- 🔍 Search → 🌐 Scrape → 📝 Write → 💬 Critique  
+- Interactive UI with step-by-step execution  
+- Downloadable research reports  
+
+> ⚡ Note: First run may take a few seconds due to API calls and model processing.
 
 ---
 
