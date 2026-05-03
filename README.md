@@ -103,3 +103,19 @@ This is the same architecture pattern used in production-grade AI systems.
 
 ---
 
+## 🚧 Future Improvements
+- Multi-source scraping (instead of single URL)
+- Source ranking and aggregation
+- Persistent memory for iterative research
+- Citation validation
+- Async pipeline execution
+- Deployment (Docker + cloud)
+
+---
+
+## 👨‍💻 Author
+
+#### Amit — Data Engineer building AI-powered systems
+
+
+
