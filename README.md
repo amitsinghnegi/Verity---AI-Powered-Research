@@ -1,43 +1,36 @@
 # ✦ Verity — AI-Powered Research Assistant
 
-Verity is an end-to-end **AI research pipeline** that automates how you gather, analyze, and evaluate information on any topic.
+Verity is a sleek, multi-agent AI research tool built with **Streamlit**, **LangChain**, and **Google Gemini**. Give it a topic, and a team of specialized AI agents will autonomously scour the web, extract deep insights, write a structured report, and critically evaluate the final draft.
 
-It uses multiple AI agents to:
-- Search the web
-- Scrape relevant sources
-- Generate structured research reports
-- Critically evaluate the output
+![UI Theme](https://img.shields.io/badge/UI-Dark%2FLight_Mode-success)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![LangChain](https://img.shields.io/badge/LangChain-Agents-orange)
+![Gemini](https://img.shields.io/badge/Model-Gemini_3.1_Flash-blueviolet)
 
-All wrapped in an interactive **Streamlit UI**.
+## 🚀 How It Works
 
----
+Verity utilizes a 4-step autonomous pipeline to generate high-quality research:
 
-## 🚀 Features
+1. **🔍 Search Agent:** Uses the Tavily API to find recent, reliable, and detailed web sources based on your prompt.
+2. **🌐 Reader/Scrape Agent:** Analyzes search results, picks the most credible URL, and scrapes the raw HTML for deep content.
+3. **📝 Writer Agent:** Synthesizes the gathered research into a structured, professional report (Introduction, Key Findings, Conclusion, Sources).
+4. **💬 Critic Agent:** Acts as a sharp research critic to evaluate the draft, providing a score out of 10, highlighting strengths, and pointing out areas to improve.
 
-- 🔍 **Search Agent**  
-  Finds recent and reliable information using web search tools : Tavily Search 
+## ✨ Features
 
-- 🌐 **Scraper Agent**  
-  Extracts clean content from selected URLs for deeper insights : Beautiful Soup
+* **Sleek UI/UX:** A highly polished Streamlit frontend featuring dynamic Dark/Light themes, smooth progress tracking, and interactive expanders.
+* **Smart Placeholders:** Hit `Tab` in the input field to auto-fill trending research topics.
+* **One-Click Export:** Download the final research report, along with the raw search data and critic feedback, as a clean `.md` file.
+* **State Persistence:** Toggling themes or interacting with the UI won't wipe your generated research.
+* **Modular Backend:** Clean separation of concerns across UI, agent logic, tool definitions, and pipeline execution.
 
-- 📝 **Writer Agent**  
-  Generates structured research reports with:
-  - Introduction  
-  - Key Findings  
-  - Conclusion  
-  - Sources :contentReference[oaicite:2]{index=2}  
+## 🛠️ Tech Stack
 
-- 💬 **Critic Agent**  
-  Evaluates report quality with:
-  - Score  
-  - Strengths  
-  - Areas to Improve  
-  - Verdict :contentReference[oaicite:3]{index=3}  
-
-- 📊 **Streamlit UI**
-  - Step-by-step pipeline tracking  
-  - Expandable sections for each stage  
-  - Markdown download support :contentReference[oaicite:4]{index=4}  
+* **Frontend:** [Streamlit](https://streamlit.io/)
+* **Orchestration:** [LangChain](https://python.langchain.com/)
+* **LLM:** Google Gemini (`gemini-3.1-flash-lite-preview`)
+* **Search Tool:** Tavily Search API
+* **Scraping:** BeautifulSoup4 & Requests
 
 ---
 
@@ -109,3 +102,4 @@ The system generates:
 This is the same architecture pattern used in production-grade AI systems.
 
 ---
+
