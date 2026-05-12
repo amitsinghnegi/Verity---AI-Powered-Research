@@ -12,7 +12,7 @@ os.environ["TAVILY_API_KEY"] = TAVILY_API_KEY
 
 from langchain_google_genai.chat_models import ChatGoogleGenerativeAI
 
-llm = ChatGoogleGenerativeAI(model="gemini-3.1-flash-lite-preview", temperature=0)
+llm = ChatGoogleGenerativeAI(model="gemini-3.1-flash-lite", temperature=0)
 
 from langchain.agents import create_agent
 from tools import scrape_url, web_search
